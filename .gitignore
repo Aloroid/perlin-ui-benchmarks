@@ -1,0 +1,12 @@
+# Project place file
+/perlin-ui-benchmarks.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Sourcemap
+/sourcemap.json
+
+# Packages
+/Packages
