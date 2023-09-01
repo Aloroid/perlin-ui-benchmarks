@@ -5,7 +5,11 @@
 
     "ReplicatedStorage": {
       "Packages": {
-        "$path": "Packages"
+        "$path": "Packages",
+
+        "vide": {
+          "$path": "modules/vide"
+        }
       },
 
       "Shared": {
@@ -23,37 +27,30 @@
       "StarterPlayerScripts": {
         "Client": {
           "$path": "src/client"
+        },
+
+        "PlayerScriptsLoader": {
+          "$path": "src/empty.luau"
+        },
+
+        "PlayerModule": {
+          "$path": "src/empty.luau"
+        },
+        
+        "RbxCharacterSounds": {
+          "$path": "src/empty.luau"
         }
+
       }
     },
 
     "Workspace": {
       "$properties": {
-        "FilteringEnabled": true
-      },
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
-        }
+        "FilteringEnabled": true,
+        "Gravity": 0
       }
     },
+
     "Lighting": {
       "$properties": {
         "Ambient": [
@@ -61,16 +58,24 @@
           0,
           0
         ],
-        "Brightness": 2,
-        "GlobalShadows": true,
+        "OutdoorAmbient": [
+          0, 0, 0
+        ],
+        "EnvironmentDiffuseScale": 0,
+        "EnvironmentSpecularScale": 0,
+        "Brightness": 0,
+        "GlobalShadows": false,
         "Outlines": false,
         "Technology": "Voxel"
       }
     },
-    "SoundService": {
+
+    "Players": {
       "$properties": {
-        "RespectFilteringEnabled": true
+        "CharacterAutoLoads": false
       }
     }
+
+
   }
 }
