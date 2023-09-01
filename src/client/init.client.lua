@@ -6,7 +6,7 @@ workspace.CurrentCamera.CFrame = CFrame.fromMatrix(Vector3.zero, Vector3.zero, V
 
 StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, false)
 
-local ui_component = "vide"
+local ui_component = "pract"
 local component = ReplicatedStorage.Shared.Components:FindFirstChild(ui_component)
 
 assert(component, `component {ui_component} does not exist`)
