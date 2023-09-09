@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
@@ -57,8 +57,8 @@ local function render()
 
 end
 
-return function()
+return function(parent)
 
-	Pract.mount(Pract.create(render), Players.LocalPlayer.PlayerGui)
+	Pract.mount(Pract.create(render), parent)
 
 end

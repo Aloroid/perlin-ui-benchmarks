@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
@@ -13,7 +13,7 @@ local Computed = Fusion.Computed
 local OnEvent = Fusion.OnEvent
 local Children = Fusion.Children
 
-return function()
+return function(parent)
 
 	local image = Value(perlin_image.image)
 	local pixel_size = constants.pixel_size
@@ -24,7 +24,7 @@ return function()
 
 	return New "ScreenGui" {
 
-		Parent = Players.LocalPlayer.PlayerGui,
+		Parent = parent,
 
 		[Children] = New "Frame" {
 

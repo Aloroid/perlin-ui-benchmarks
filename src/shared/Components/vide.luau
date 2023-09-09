@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
@@ -11,7 +11,7 @@ local create = vide.create
 local source = vide.source
 local indexes = vide.indexes
 
-return function()
+return function(parent)
 
 	local image = source(perlin_image.image)
 	local pixel_size = constants.pixel_size
@@ -22,7 +22,7 @@ return function()
 
 	return create "ScreenGui" {
 
-		Parent = Players.LocalPlayer.PlayerGui,
+		Parent = parent,
 
 		create "Frame" {
 

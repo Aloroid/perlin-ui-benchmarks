@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
@@ -68,8 +68,8 @@ function Perlin:unmount()
 	self.connection:Disconnect()
 end
 
-return function()
+return function(parent)
 
-	Roact.mount(c(Perlin), Players.LocalPlayer.PlayerGui)
+	Roact.mount(c(Perlin), parent)
 
 end

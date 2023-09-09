@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
@@ -69,9 +69,9 @@ function Perlin:componentWillUnmount()
 	self.connection:Disconnect()
 end
 
-return function()
+return function(parent)
 
-	local root = ReactRoblox.createRoot(Players.LocalPlayer.PlayerGui)
+	local root = ReactRoblox.createRoot(parent)
 	root:render(c(Perlin))
 
 end

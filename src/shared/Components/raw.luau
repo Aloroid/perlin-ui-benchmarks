@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
@@ -6,7 +6,7 @@ local constants = require(ReplicatedStorage.Shared.constants)
 local perlin_image = require(ReplicatedStorage.Shared.perlin_image)
 local utility = require(ReplicatedStorage.Shared.utility)
 
-return function()
+return function(parent)
 
 	local pixel_size = constants.pixel_size
 	local pixels = {}
@@ -45,7 +45,7 @@ return function()
 	end)
 
 	frame.Parent = screen_gui
-	screen_gui.Parent = Players.LocalPlayer.PlayerGui
+	screen_gui.Parent = parent
 
 	screen_gui.Destroying:Connect(function()
 		connection:Disconnect()
