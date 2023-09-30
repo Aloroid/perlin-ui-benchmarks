@@ -5,11 +5,7 @@
 
     "ReplicatedStorage": {
       "Packages": {
-        "$path": "Packages",
-
-        "vide": {
-          "$path": "modules/vide"
-        }
+        "$path": "Packages"
       },
 
       "Shared": {
